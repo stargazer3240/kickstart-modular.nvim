@@ -20,12 +20,13 @@ require("lazy").setup {
         char = "│",
         tab_char = "│",
       },
+      scope = { enabled = false },
     },
   },
 
   { "numToStr/Comment.nvim", opts = {} },
 
-  { -- Collection of various small independent plugins/modules
+  {
     "echasnovski/mini.nvim",
     config = function()
       -- Better Around/Inside textobjects
@@ -42,9 +43,6 @@ require("lazy").setup {
       -- - sd'   - [S]urround [D]elete [']quotes
       -- - sr)'  - [S]urround [R]eplace [)] [']
       require("mini.surround").setup()
-
-      -- ... and there is more!
-      --  Check out: https://github.com/echasnovski/mini.nvim
     end,
   },
 
