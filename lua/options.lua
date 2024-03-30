@@ -1,7 +1,5 @@
 -- [[ Setting options ]]
 -- See `:help vim.opt`
--- NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
 
 -- Make line numbers default
 vim.opt.number = true
@@ -29,6 +27,12 @@ vim.opt.undofile = true
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.o.expandtab = true
+vim.o.shiftwidth = 2
+vim.o.smartindent = true
+vim.o.tabstop = 2
+vim.o.wrap = false
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = "yes"

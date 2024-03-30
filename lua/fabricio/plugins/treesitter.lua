@@ -18,6 +18,7 @@ return {
         "python",
         "cpp",
         "cmake",
+        "java",
       },
       auto_install = true,
       highlight = {

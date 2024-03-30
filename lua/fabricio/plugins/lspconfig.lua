@@ -90,6 +90,7 @@ return {
       local servers = {
         clangd = {},
         pyright = {},
+        jdtls = {},
         -- TODO: check how to disable hover for ruff.
         -- ruff_lsp = {},
 

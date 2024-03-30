@@ -22,7 +22,6 @@ return {
       },
       "saadparwaiz1/cmp_luasnip",
       "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-path",
       "onsails/lspkind.nvim",
     },
     config = function()
@@ -40,21 +39,13 @@ return {
         completion = { completeopt = "menu,menuone,noinsert" },
 
         mapping = cmp.mapping.preset.insert {
-          -- Select the [n]ext item
           ["<C-n>"] = cmp.mapping.select_next_item(),
-          -- Select the [p]revious item
           ["<C-p>"] = cmp.mapping.select_prev_item(),
-
-          -- Scroll the documentation window [b]ack / [f]orward
           ["<C-b>"] = cmp.mapping.scroll_docs(-4),
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
-
-          -- Accept ([y]es) the completion.
-          ["<C-y>"] = cmp.mapping.confirm { select = true },
-
-          -- Manually trigger a completion from nvim-cmp.
+          ["<CR>"] = cmp.mapping.confirm { select = true },
+          ["<C-e>"] = cmp.mapping.abort(),
           ["<C-Space>"] = cmp.mapping.complete {},
-
           ["<C-left>"] = cmp.mapping(function()
             if luasnip.expand_or_locally_jumpable() then
               luasnip.expand_or_jump()
@@ -69,7 +60,6 @@ return {
         sources = {
           { name = "nvim_lsp" },
           { name = "luasnip" },
-          { name = "path" },
         },
         formatting = {
           format = lspkind.cmp_format {},
