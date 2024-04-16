@@ -20,6 +20,7 @@ return {
         "cpp",
         "cmake",
         "java",
+        "luadoc",
       },
       auto_install = true,
       highlight = {
