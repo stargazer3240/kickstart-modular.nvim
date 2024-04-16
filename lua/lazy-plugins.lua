@@ -100,6 +100,14 @@ require("lazy").setup {
     opts = {},
   },
 
+  { "windwp/nvim-ts-autotag", opts = {} },
+
+  {
+    "ray-x/web-tools.nvim",
+    ft = { "html", "css" },
+    opts = {},
+  },
+
   require("fabricio.plugins.which-key"),
 
   require("fabricio.plugins.telescope"),

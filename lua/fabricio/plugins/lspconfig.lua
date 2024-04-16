@@ -92,7 +92,11 @@ return {
         pyright = {},
         jdtls = {},
         -- TODO: check how to disable hover for ruff.
-        -- ruff_lsp = {},
+        ruff_lsp = {},
+        vale_ls = {},
+        tsserver = {},
+        html = {},
+        cssls = {},
 
         lua_ls = {
           settings = {
@@ -113,6 +117,8 @@ return {
         "stylua",
         "clang-format",
         "gersemi",
+        "markdownlint",
+        "prettierd",
       })
       require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 

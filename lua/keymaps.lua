@@ -30,8 +30,8 @@ map("v", "<", "<gv")
 map("v", ">", ">gv")
 
 -- Neotree keymaps
-map({ "i", "n" }, "<C-f>", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neotree" })
-map({ "i", "n" }, "<S-f>", "<cmd>Neotree focus<cr>", { desc = "Focus Neotree" })
+map({ "i", "n" }, "<C-e>", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neotree" })
+map({ "i", "n" }, "<C-f>", "<cmd>Neotree focus<cr>", { desc = "Focus Neotree" })
 
 -- Resize window using <ctrl> arrow keys
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
