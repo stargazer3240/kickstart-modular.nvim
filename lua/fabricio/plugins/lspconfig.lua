@@ -48,18 +48,15 @@ return {
       local servers = {
         clangd = {},
         pyright = {
-          capabilities = {
-            textDocument = {
-              publishDiagnostics = {
-                tagSupport = {
-                  valueSet = { 2 },
-                },
-              },
-            },
-          },
           settings = {
             pyright = {
               disableOrganizeImports = true,
+            },
+            python = {
+              analysis = {
+                ignore = { "*" },
+                typeCheckingMode = "off",
+              },
             },
           },
         },
@@ -95,6 +92,7 @@ return {
         "gersemi",
         "markdownlint",
         "prettierd",
+        "mypy",
       })
       require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 
