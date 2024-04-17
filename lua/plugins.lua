@@ -1,4 +1,3 @@
--- [[ Configure and install plugins ]]
 require("lazy").setup {
   {
     "loctvl842/monokai-pro.nvim",
@@ -9,11 +8,8 @@ require("lazy").setup {
     end,
   },
 
-  { "tpope/vim-sleuth" },
-
   {
     "lukas-reineke/indent-blankline.nvim",
-    -- See `:help ibl`
     main = "ibl",
     opts = {
       indent = {
@@ -105,6 +101,12 @@ require("lazy").setup {
   {
     "ray-x/web-tools.nvim",
     ft = { "html", "css" },
+    opts = {},
+  },
+
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
 

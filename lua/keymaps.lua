@@ -39,6 +39,12 @@ map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
+map("n", "<leader>tt", "<cmd>TroubleToggle<cr>", { desc = "[T]rouble [T]oggle" })
+map("n", "<leader>tw", "<cmd>TroubleToggle workspace_diagnostics<cr>", { desc = "[T]rouble [W]orkspace" })
+map("n", "<leader>td", "<cmd>TroubleToggle document_diagnostics<cr>", { desc = "[T]rouble [D]ocument" })
+map("n", "<leader>tq", "<cmd>TroubleToggle quickfix<cr>", { desc = "[T]rouble [Q]uickfix" })
+map("n", "<leader>tl", "<cmd>TroubleToggle loclist<cr>", { desc = "[T]rouble [L]oclist" })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 

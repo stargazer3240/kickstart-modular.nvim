@@ -22,6 +22,7 @@ return {
       },
       "saadparwaiz1/cmp_luasnip",
       "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-path",
       "onsails/lspkind.nvim",
     },
     config = function()
@@ -46,12 +47,12 @@ return {
           ["<CR>"] = cmp.mapping.confirm { select = true },
           ["<C-e>"] = cmp.mapping.abort(),
           ["<C-Space>"] = cmp.mapping.complete {},
-          ["<C-left>"] = cmp.mapping(function()
+          ["<C-right>"] = cmp.mapping(function()
             if luasnip.expand_or_locally_jumpable() then
               luasnip.expand_or_jump()
             end
           end, { "i", "s" }),
-          ["<C-right>"] = cmp.mapping(function()
+          ["<C-left>"] = cmp.mapping(function()
             if luasnip.locally_jumpable(-1) then
               luasnip.jump(-1)
             end
@@ -60,6 +61,7 @@ return {
         sources = {
           { name = "nvim_lsp" },
           { name = "luasnip" },
+          { name = "path" },
         },
         formatting = {
           format = lspkind.cmp_format {},
