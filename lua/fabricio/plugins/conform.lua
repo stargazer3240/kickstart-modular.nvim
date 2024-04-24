@@ -15,7 +15,7 @@ return {
         cpp = { "clang_format" },
         cmake = { "gersemi" },
         lua = { "stylua" },
-        markdown = { "markdownlint" },
+        markdown = { "prettierd" },
         css = { "prettierd" },
         html = { "prettierd" },
       },

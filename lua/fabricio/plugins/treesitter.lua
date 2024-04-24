@@ -21,6 +21,7 @@ return {
         "cmake",
         "java",
         "luadoc",
+        "just",
       },
       auto_install = true,
       highlight = {
