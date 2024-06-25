@@ -20,8 +20,6 @@ require("lazy").setup {
     },
   },
 
-  { "numToStr/Comment.nvim", opts = {} },
-
   {
     "echasnovski/mini.nvim",
     config = function()
