@@ -55,7 +55,6 @@ return {
             python = {
               analysis = {
                 ignore = { "*" },
-                typeCheckingMode = "off",
               },
             },
           },
@@ -92,7 +91,6 @@ return {
         "gersemi",
         "markdownlint",
         "prettierd",
-        "mypy",
       })
       require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 
